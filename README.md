@@ -38,7 +38,7 @@ Kivo provides a clean, always-on-top reading overlay for scripts, AI-generated c
 Clone the repository:
 
 ```bash
-git clone https://github.com/<your-username>/kivo.git
+git clone https://github.com/rajtilakjee/kivo.git
 cd kivo
 ```
 
