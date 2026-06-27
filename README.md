@@ -7,6 +7,7 @@ Kivo provides a clean, always-on-top reading overlay for scripts, AI-generated c
 > **Status:** 🚧 MVP (v0.1.0)
 
 ---
+![GitHub release (with filter)](https://img.shields.io/github/v/release/rajtilakjee/kivo) &nbsp; ![GitHub License](https://img.shields.io/github/license/rajtilakjee/kivo) &nbsp; ![GitHub Repo stars](https://img.shields.io/github/stars/rajtilakjee/kivo) &nbsp; ![GitHub forks](https://img.shields.io/github/forks/rajtilakjee/kivo) &nbsp; ![GitHub repo size](https://img.shields.io/github/repo-size/rajtilakjee/kivo)
 
 ## Features
 
