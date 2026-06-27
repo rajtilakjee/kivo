@@ -10,6 +10,8 @@ Kivo provides a clean, always-on-top reading overlay for scripts, AI-generated c
 
 ---
 
+https://github.com/user-attachments/assets/eaa42e1f-77f2-406f-9cee-83f556f3c61d
+
 ## Features
 
 * Frameless, always-on-top overlay
