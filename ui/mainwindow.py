@@ -10,6 +10,9 @@ from PySide6.QtWidgets import (
     QVBoxLayout,
 )
 
+from ctypes import windll
+
+WDA_EXCLUDEFROMCAPTURE = 0x11
 
 class MainWindow(QMainWindow):
     def __init__(self, file_path):
@@ -145,6 +148,13 @@ class MainWindow(QMainWindow):
 
     def showEvent(self, event):
         super().showEvent(event)
+
+        hwnd = int(self.winId())
+        windll.user32.SetWindowDisplayAffinity(
+            hwnd,
+            WDA_EXCLUDEFROMCAPTURE
+        )
+
         self.activateWindow()
         self.raise_()
         self.setFocus()
