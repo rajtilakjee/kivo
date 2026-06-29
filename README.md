@@ -74,11 +74,11 @@ The executable will be generated inside the `dist/` directory.
 
 ## Star History
 
-<a href="https://www.star-history.com/?repos=rajtilakjee%2Fkivo&type=timeline&logscale=&legend=bottom-right">
+<a href="https://www.star-history.com/?repos=rajtilakjee%2Fkivo&type=date&logscale=&legend=top-left">
  <picture>
-   <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/chart?repos=rajtilakjee/kivo&type=timeline&theme=dark&logscale&legend=top-left" />
-   <source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/chart?repos=rajtilakjee/kivo&type=timeline&logscale&legend=top-left" />
-   <img alt="Star History Chart" src="https://api.star-history.com/chart?repos=rajtilakjee/kivo&type=timeline&logscale&legend=top-left" />
+   <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/chart?repos=rajtilakjee/kivo&type=date&theme=dark&logscale&legend=top-left" />
+   <source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/chart?repos=rajtilakjee/kivo&type=date&logscale&legend=top-left" />
+   <img alt="Star History Chart" src="https://api.star-history.com/chart?repos=rajtilakjee/kivo&type=date&logscale&legend=top-left" />
  </picture>
 </a>
 
