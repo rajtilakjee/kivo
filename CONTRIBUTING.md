@@ -29,6 +29,23 @@ All types of contributions are encouraged and valued. See the [Table of Contents
 - [I Have a Question](#i-have-a-question)
 - [Code of Conduct](#code-of-conduct)
 
+## Development Setup
+
+Install [uv](https://docs.astral.sh/uv/), then:
+
+```bash
+git clone https://github.com/rajtilakjee/kivo.git
+cd kivo
+uv sync --group dev
+uv run python main.py
+```
+
+Lint with:
+
+```bash
+uv run ruff check .
+```
+
 ## New Contributor Guide
 
 To get an overview of the project, read the [README](README.md). Here are some resources to help you get started with open source contributions:

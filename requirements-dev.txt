@@ -1,2 +1,0 @@
-ruff==0.15.20
-pyinstaller==6.21.0
