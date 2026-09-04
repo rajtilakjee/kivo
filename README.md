@@ -14,14 +14,16 @@ https://github.com/user-attachments/assets/eaa42e1f-77f2-406f-9cee-83f556f3c61d
 
 ## Features
 
-* Frameless, always-on-top overlay
-* Modern rounded UI with a translucent background
-* Draggable window
-* Open any text (`.txt`) file
-* Automatically reloads when the file changes
+* Frameless, always-on-top glass overlay
+* Header with script name, live/paused state, and speed
+* Draggable and resizable window
+* Open `.txt` or `.md` files, with `Ctrl+O` to switch scripts
+* Reloads automatically when the file changes
 * Smooth teleprompter-style auto-scrolling
-* Adjustable scrolling speed
-* Pause and resume scrolling
+* Click or drag the progress bar to jump
+* Adjustable scroll speed, font size, and opacity
+* Remembers window size, speed, font, and opacity
+* Hidden from screen sharing in Meet, Zoom, Teams, and similar apps
 * Lightweight and distraction-free
 
 ---
@@ -30,32 +32,34 @@ https://github.com/user-attachments/assets/eaa42e1f-77f2-406f-9cee-83f556f3c61d
 
 | Shortcut | Action                   |
 | -------- | ------------------------ |
-| `Esc`    | Close Kivo               |
+| `?` / `H` / `F1` | Show or hide controls |
+| `Esc`    | Close help, or close Kivo |
 | `Space`  | Pause / Resume scrolling |
-| `↑`      | Increase scrolling speed |
-| `↓`      | Decrease scrolling speed |
+| `↑` / `↓` | Increase / decrease speed |
+| `←` / `→` | Skip backward / forward |
+| `+` / `-` | Increase / decrease font size |
+| `[` / `]` | Decrease / increase opacity |
+| `R`      | Restart from the top     |
+| `Ctrl+O` | Open another script      |
+| `Ctrl+Scroll` | Change font size    |
+| `Scroll` | Nudge the script         |
 
 ---
 
 ## Installation
 
-Clone the repository:
+Install [uv](https://docs.astral.sh/uv/), then clone the repository:
 
 ```bash
 git clone https://github.com/rajtilakjee/kivo.git
 cd kivo
 ```
 
-Install the dependencies:
+Sync the environment and run the application:
 
 ```bash
-pip install -r requirements.txt
-```
-
-Run the application:
-
-```bash
-python main.py
+uv sync
+uv run python main.py
 ```
 
 ---
@@ -65,10 +69,21 @@ python main.py
 Create a standalone executable using PyInstaller:
 
 ```bash
-pyinstaller --onefile --windowed --name Kivo main.py
+uv sync --group dev
+uv run pyinstaller --onefile --windowed --name Kivo main.py
 ```
 
 The executable will be generated inside the `dist/` directory.
+
+---
+
+## Development
+
+```bash
+uv sync --group dev
+uv run ruff check .
+uv run python main.py
+```
 
 ---
 
@@ -88,9 +103,8 @@ The executable will be generated inside the `dist/` directory.
 
 * Settings window
 * Global hotkeys
-* Remember last opened file
-* Font customization
-* Adjustable opacity
+* Reopen the last script on launch
+* Font family picker
 * Scroll speed presets
 * Mirror mode
 * Multiple themes
@@ -101,8 +115,9 @@ The executable will be generated inside the `dist/` directory.
 
 ## Tech Stack
 
-* Python 3
+* Python 3.10+
 * PySide6 (Qt for Python)
+* uv for environments and dependencies
 
 ---
 
