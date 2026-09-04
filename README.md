@@ -6,7 +6,7 @@ A lightweight desktop teleprompter built with **PySide6**.
 
 Kivo provides a clean, always-on-top reading overlay for scripts, AI-generated content, presentations, and video recordings.
 
-> **Status:** 🚧 MVP (v0.1.0)
+> **Status:** 🚧 MVP (v0.2.0)
 
 ---
 

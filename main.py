@@ -19,7 +19,7 @@ from ui.selector import select_text_file  # noqa: E402
 def main() -> None:
     app = QApplication(sys.argv)
     app.setApplicationName("Kivo")
-    app.setApplicationVersion("0.1.0")
+    app.setApplicationVersion("0.2.0")
     app.setOrganizationName("Kivo")
     app.setStyle("Fusion")
     app.setFont(QFont("Segoe UI", 10))
